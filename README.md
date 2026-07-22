@@ -1,16 +1,18 @@
 # RML4MSE-KG
 
-RML4MSE-KG is a collection of several RML pipelines for integrating NFDI MatWerk community datasets (e.g. JSON) into **[MSE-KG]((https://nfdi.fiz-karlsruhe.de/matwerk/))**.
+RML4MSE-KG is a collection of several RML pipelines for integrating NFDI MatWerk community datasets (e.g. JSON) into **[MSE-KG](https://nfdi.fiz-karlsruhe.de/matwerk/)**.
 
 ## How it works
 
 Within a repo, a YARRRML mapping (`*.yml`) describes how the source JSON maps to RDF, grounded in a domain ontology; a driver script (`*.sh`) compiles that mapping to RML and runs it over every JSON file to produce one combined, idempotent `.ttl` file.
 
-![YARRRML pipeline](docs/images/yarrrml-pipeline.png)
+<img width="1383" height="216" alt="image" src="https://github.com/user-attachments/assets/bd2e3ae1-396f-45d3-9c34-f49cc4999ad7" />
+
 
 Each dataset repo produces RDF that flows into Zenodo and the PMD data portal, which are in turn harvested into MSE-KG; SPARQL, SHACL, and reasoning validate the result along the way.
 
-![Pipeline overview](docs/images/pipeline-overview.png)
+<img width="1154" height="361" alt="image" src="https://github.com/user-attachments/assets/616d7fe5-e548-4fd8-873d-2bbaf23d6a4f" />
+
 
 ## Sub-repositories
 
