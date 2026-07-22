@@ -18,22 +18,20 @@ Each dataset repo produces RDF that flows into Zenodo and the PMD data portal, w
 
 ### [Creep reference dataset (IUC02)](./Creep%20reference%20dataset%20(IUC02))
 
-The pipeline is planned to map **BAM Reference Data: Creep of Single-Crystal Ni-Based Superalloy CMSX-6.** into MSE-KG. The RDF-converted sources semantically descrble creep testing process, test pieces, materials & chemical composition, test machines & extensometers, input specifications (stress, temperature), and primary/secondary test results (rupture time, gauge lengths, durations, elongation/extension percentages).
+The pipeline is planned to map **[BAM Reference Data: Creep of Single-Crystal Ni-Based Superalloy CMSX-6](https://zenodo.org/records/20132712)** into MSE-KG. The RDF-converted sources semantically descrble creep testing process, test pieces, materials & chemical composition, test machines & extensometers, input specifications (stress, temperature), and primary/secondary test results (rupture time, gauge lengths, durations, elongation/extension percentages).
 
-**Links**
+**Links:**
 - [Source JSON datasets](https://zenodo.org/records/20132712)
 - [Reused Creep Testing Ontology (CTO)](https://github.com/HosseinBeygiNasrabadi/creep-testing-ontology)
 - RDF in MaterialDigital Data Portal: *(link to be added)*
 - SPARQL endpoint: *(link to be added)*
 - Guided query UI (Sparklis): *(link to be added)*
 
-**Running it yourself**
+**Running it yourself:** If you have a new dataset;
 
-If you have a new dataset:
-
-1. Clone the repository.
-2. Put your dataset in the `JSON datasets/` folder.
-3. Run `bash creep_reference_dataset_map.sh`.
+1. Clone the repository,
+2. Put your dataset in the `JSON datasets/` folder,
+3. Run `bash creep_reference_dataset_map.sh`,
 4. Copy the updated `creep_reference_dataset_rdf.ttl` and push it to Zenodo / the PMD data portal.
 
 **Example SPARQL queries** (see [`queries/`](./Creep%20reference%20dataset%20(IUC02)/queries)):
@@ -58,9 +56,9 @@ If you use RML4MSE-KG in your research, please cite:
 
 ```bibtex
 @software{RML4MSE-KG,
-  author  = {Beygi Nasrabadi, Hossein and Norouzi, Ebrahim and Waitelonis, J{\"o}rg and Sack, Harald},
+  author  = {Beygi Nasrabadi, Hossein and Norouzi, Ebrahim and Waitelonis, Jörg and Sack, Harald},
   title   = {RML pipelines for integrating NFDI MatWerk community datasets to MSE-KG (RML4MSE-KG)},
-  url     = {https://github.com/HosseinBeygiNasrabadi/RML4MSE_KG},
+  url     = {https://github.com/HosseinBeygiNasrabadi/RML4MSE-KG},
   version = {1.0.0},
   date    = {2026-07-22},
 }
