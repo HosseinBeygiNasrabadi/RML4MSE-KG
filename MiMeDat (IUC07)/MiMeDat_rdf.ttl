@@ -167,9 +167,11 @@ msekg:funding_process_a46fde6c a mwo:MWO_0001067 ;
 msekg:temporal_region_a46fde6c a obo:BFO_0000038 .
 
 msekg:person_contributor_a46fde6c_0 a nfdi:NFDI_0000004 ;
+    obo:RO_0000056 msekg:simulation_process_a46fde6c ;
     obo:RO_0000087 msekg:contributor_role_a46fde6c_0 .
 
 msekg:person_creator_a46fde6c_0 a nfdi:NFDI_0000004 ;
+    obo:RO_0000056 msekg:simulation_process_a46fde6c ;
     obo:RO_0000087 msekg:creator_role_a46fde6c_0 .
 
 msekg:contributor_role_a46fde6c_0 a nfdi:NFDI_0000118 ;
