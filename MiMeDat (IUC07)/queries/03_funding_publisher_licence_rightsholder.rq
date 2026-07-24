@@ -1,0 +1,51 @@
+# CQ: Retrieve the funding organization, publisher, licence, and rights holder for the a46fde6c dataset.
+PREFIX msekg: <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/>
+PREFIX nfdi:  <https://nfdi.fiz-karlsruhe.de/ontology/>
+PREFIX mwo:   <http://purls.helmholtz-metadaten.de/mwo/>
+PREFIX obo:   <http://purl.obolibrary.org/obo/>
+PREFIX swo:   <http://www.ebi.ac.uk/swo/>
+
+SELECT ?funder ?fundIdentifier ?publisher ?licence ?rightsHolder
+WHERE {
+  BIND(msekg:a46fde6c AS ?dataset)
+  ?dataset obo:OBI_0000312 ?process .            # is_specified_output_of
+
+  OPTIONAL {
+    ?funderIdent a obo:IAO_0020000 ;
+                 obo:IAO_0000219 ?funderRole ;     # denotes
+                 nfdi:NFDI_0001007 ?funder .       # has_value
+    ?funderRole a nfdi:NFDI_0000139 ;              # funding organization role
+                obo:RO_0000081 ?funderOrg .        # role_of
+    ?funderOrg obo:RO_0000056 ?fundingProcess .    # participates_in
+    ?fundingProcess obo:BFO_0000063 ?process .     # precedes
+  }
+  OPTIONAL {
+    ?fundIdEnt a mwo:MWO_0001068 ;                 # funding identifier
+               obo:IAO_0000219 ?fundingProcess2 ;
+               nfdi:NFDI_0001007 ?fundIdentifier .
+    ?fundingProcess2 obo:BFO_0000063 ?process .
+  }
+  OPTIONAL {
+    ?publisherIdent a obo:IAO_0020000 ;
+                    obo:IAO_0000219 ?publisherRole ;
+                    nfdi:NFDI_0001007 ?publisher .
+    ?publisherRole a nfdi:NFDI_0000193 ;           # publisher role
+                   obo:RO_0000081 ?publisherOrg .
+    ?publisherOrg obo:RO_0000056 ?publishingProcess .
+    ?publishingProcess obo:BFO_0000063 ?process .
+  }
+  OPTIONAL {
+    ?licenceEnt a swo:SWO_0000002 ;                # licence
+                obo:IAO_0000219 ?dataset ;
+                nfdi:NFDI_0001007 ?licence .
+  }
+  OPTIONAL {
+    ?rightsHolderIdent a obo:IAO_0020000 ;
+                       obo:IAO_0000219 ?rightsHolderRole ;
+                       nfdi:NFDI_0001007 ?rightsHolder .
+    ?rightsHolderRole a mwo:MWO_0001065 ;          # license holder role
+                      obo:RO_0000081 ?rightsHolderOrg .
+    ?rightsHolderOrg obo:RO_0000056 ?licensingProcess .
+    ?licensingProcess obo:BFO_0000063 ?process .
+  }
+}

@@ -1,0 +1,522 @@
+prefixes:
+  rml: http://semweb.mmlab.be/ns/rml#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  dcterms: http://purl.org/dc/terms/
+  msekg: https://nfdi.fiz-karlsruhe.de/matwerk/msekg/
+  obo: http://purl.obolibrary.org/obo/
+  nfdi: https://nfdi.fiz-karlsruhe.de/ontology/
+  mwo: http://purls.helmholtz-metadaten.de/mwo/
+  swo: http://www.ebi.ac.uk/swo/
+  unit: http://qudt.org/vocab/unit/
+  qudt: http://qudt.org/schema/qudt/
+
+  # ---- Classes (all from MWO / MWO-reused terms, labels from mwo.ttl) ----
+  simulation_dataset: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001205                
+  simulation_process: https://w3id.org/pmd/co/PMD_0000933                               
+  person: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004                           
+  identifier: http://purl.obolibrary.org/obo/IAO_0020000                                
+  title: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001019                             
+  personal_name: http://purl.obolibrary.org/obo/IAO_0020015                            
+  creator_role: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001026                    
+  orcid_identifier: http://purl.obolibrary.org/obo/IAO_0000708                          
+  affiliation: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001102                     
+  institute_role: http://purls.helmholtz-metadaten.de/mwo/MWO_0001063                    
+  organization: http://purl.obolibrary.org/obo/OBI_0000245                               
+  research_group_role: http://purls.helmholtz-metadaten.de/mwo/MWO_0001055               
+  contributor_role: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000118                 
+  date_process_started: http://purl.obolibrary.org/obo/OBI_0002471                       
+  one_dimensional_temporal_region: http://purl.obolibrary.org/obo/BFO_0000038            
+  data_creation_process: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010031             
+  information_access_specification: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052  
+  textual_description: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001018               
+  licence: http://www.ebi.ac.uk/swo/SWO_0000002                                          
+  licencing_holder_role: http://purls.helmholtz-metadaten.de/mwo/MWO_0001065             
+  licensing_process: http://purls.helmholtz-metadaten.de/mwo/MWO_0001066                 
+  funding_organization_role: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139         
+  funding_process: http://purls.helmholtz-metadaten.de/mwo/MWO_0001067                   
+  funding_identifier: http://purls.helmholtz-metadaten.de/mwo/MWO_0001068                
+  publisher_role: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193                   
+  publishing_process: http://purl.obolibrary.org/obo/IAO_0000444                         
+  information_content_entity: http://purl.obolibrary.org/obo/IAO_0000030                 
+  keyword_textual_entity: http://purl.obolibrary.org/obo/IAO_0000629                    
+
+  # ---- Object properties ----
+  is_specified_output_of: http://purl.obolibrary.org/obo/OBI_0000312     
+  participates_in: http://purl.obolibrary.org/obo/RO_0000056            
+  denotes: http://purl.obolibrary.org/obo/IAO_0000219                    
+  role_of: http://purl.obolibrary.org/obo/RO_0000081                    
+  has_role: http://purl.obolibrary.org/obo/RO_0000087                  
+  has_member: http://purl.obolibrary.org/obo/RO_0002351                 
+  occupies_temporal_region: http://purl.obolibrary.org/obo/BFO_0000199  
+  preceded_by: http://purl.obolibrary.org/obo/BFO_0000062               
+  precedes: http://purl.obolibrary.org/obo/BFO_0000063                
+  is_about: http://purl.obolibrary.org/obo/IAO_0000136                 
+
+  # ---- Data properties ----
+  has_value: https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007  
+
+
+
+sources:
+  root:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$"
+
+  creators:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$._creators[*]"
+
+  contributors:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$._contributors[*]"
+
+  shared_with:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$.shared_with[*]"
+
+  rights_holder:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$.rights_holder[*]"
+
+  relation:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$.relation[*]"
+
+  keywords:
+    access: .rml_work/current.json
+    referenceFormulation: jsonpath
+    iterator: "$.keywords[*]"
+
+
+
+
+mappings:
+  # SHARED ENTITIES
+
+  simulation_dataset:
+    sources: root
+    s: msekg:$(_fileID)
+    po:
+      - [a, simulation_dataset:]
+      - [rdfs:label, $(_fileID)]
+      - [is_specified_output_of:, msekg:simulation_process_$(_fileID)~iri]
+
+  simulation_process:
+    sources: root
+    s: msekg:simulation_process_$(_fileID)
+    po:
+      - [a, simulation_process:]
+
+
+  # PARAMETERS (in JSON field order)
+
+  # --- identifier ---
+  # 'identifier' and (denotes some 'simulation dataset')
+  identifier_dataset:
+    sources: root
+    s: msekg:identifier_$(_fileID)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:$(_fileID)~iri]
+      - [has_value:, $(identifier)]
+
+  # --- title ---
+  # 'title' and (denotes some 'simulation dataset')
+  title_dataset:
+    sources: root
+    s: msekg:title_$(_fileID)
+    po:
+      - [a, title:]
+      - [denotes:, msekg:$(_fileID)~iri]
+      - [has_value:, $(title)]
+
+  # --- creator ---
+  # 'personal name' and (denotes some ('creator role' and (role of some person)))
+  personal_name_creator:
+    sources: creators
+    s: msekg:personal_name_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, personal_name:]
+      - [denotes:, msekg:creator_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(name)]
+
+  creator_role:
+    sources: creators
+    s: msekg:creator_role_$(_fileID)_$(_idx)
+    po:
+      - [a, creator_role:]
+      - [role_of:, msekg:person_creator_$(_fileID)_$(_idx)~iri]
+
+  person_creator:
+    sources: creators
+    s: msekg:person_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, person:]
+      - [participates_in:, msekg:simulation_process_$(_fileID)~iri]
+
+  # --- creator_ORCID ---
+  # 'ORCID identifier' and (denotes some ('creator role' and (role of some person)))
+  orcid_identifier_creator:
+    sources: creators
+    s: msekg:orcid_identifier_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, orcid_identifier:]
+      - [denotes:, msekg:creator_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(orcid)]
+
+  # --- creator_affiliation ---
+  # 'affiliation' and (denotes some ('creator role' and (role of some person)))
+  affiliation_creator:
+    sources: creators
+    s: msekg:affiliation_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, affiliation:]
+      - [denotes:, msekg:creator_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(affiliation)]
+
+  # --- creator_institute ---
+  # 'identifier' and (denotes some ('institute role' and (role of some (organization and (has member some (person and (has role some 'creator role')))))))
+  identifier_creator_institute:
+    sources: creators
+    s: msekg:identifier_creator_institute_$(_fileID)_$(_idx)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:institute_role_creator_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(institute)]
+
+  institute_role_creator:
+    sources: creators
+    s: msekg:institute_role_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, institute_role:]
+      - [role_of:, msekg:organization_institute_creator_$(_fileID)_$(_idx)~iri]
+
+  organization_institute_creator:
+    sources: creators
+    s: msekg:organization_institute_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, organization:]
+      - [has_member:, msekg:person_creator_$(_fileID)_$(_idx)~iri]
+
+  person_creator_has_role:
+    sources: creators
+    s: msekg:person_creator_$(_fileID)_$(_idx)
+    po:
+      - [has_role:, msekg:creator_role_$(_fileID)_$(_idx)~iri]
+
+  # --- creator_group ---
+  # 'identifier' and (denotes some ('research group role' and (role of some (organization and (has member some (person and (has role some 'creator role')))))))
+  identifier_creator_group:
+    sources: creators
+    s: msekg:identifier_creator_group_$(_fileID)_$(_idx)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:research_group_role_creator_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(group)]
+
+  research_group_role_creator:
+    sources: creators
+    s: msekg:research_group_role_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, research_group_role:]
+      - [role_of:, msekg:organization_group_creator_$(_fileID)_$(_idx)~iri]
+
+  organization_group_creator:
+    sources: creators
+    s: msekg:organization_group_creator_$(_fileID)_$(_idx)
+    po:
+      - [a, organization:]
+      - [has_member:, msekg:person_creator_$(_fileID)_$(_idx)~iri]
+
+  # --- contributor ---
+  # 'personal name' and (denotes some ('contributor role' and (role of some person)))
+  personal_name_contributor:
+    sources: contributors
+    s: msekg:personal_name_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, personal_name:]
+      - [denotes:, msekg:contributor_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(name)]
+
+  contributor_role:
+    sources: contributors
+    s: msekg:contributor_role_$(_fileID)_$(_idx)
+    po:
+      - [a, contributor_role:]
+      - [role_of:, msekg:person_contributor_$(_fileID)_$(_idx)~iri]
+
+  person_contributor:
+    sources: contributors
+    s: msekg:person_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, person:]
+      - [participates_in:, msekg:simulation_process_$(_fileID)~iri]
+
+  # --- contributor_ORCID ---
+  # 'ORCID identifier' and (denotes some ('contributor role' and (role of some person)))
+  orcid_identifier_contributor:
+    sources: contributors
+    s: msekg:orcid_identifier_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, orcid_identifier:]
+      - [denotes:, msekg:contributor_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(orcid)]
+
+  # --- contributor_affiliation ---
+  # 'affiliation' and (denotes some ('contributor role' and (role of some person)))
+  affiliation_contributor:
+    sources: contributors
+    s: msekg:affiliation_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, affiliation:]
+      - [denotes:, msekg:contributor_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(affiliation)]
+
+  # --- contributor_institute ---
+  # 'identifier' and (denotes some ('institute role' and (role of some (organization and (has member some (person and (has role some 'contributor role')))))))
+  # NOTE: mapping_rules column N literally names the target role class "creator role" here (rows 11-12) -
+  # treated as a sheet copy-paste artifact and corrected to "contributor role" so the axiom stays internally consistent. Flag for review.
+  identifier_contributor_institute:
+    sources: contributors
+    s: msekg:identifier_contributor_institute_$(_fileID)_$(_idx)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:institute_role_contributor_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(institute)]
+
+  institute_role_contributor:
+    sources: contributors
+    s: msekg:institute_role_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, institute_role:]
+      - [role_of:, msekg:organization_institute_contributor_$(_fileID)_$(_idx)~iri]
+
+  organization_institute_contributor:
+    sources: contributors
+    s: msekg:organization_institute_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, organization:]
+      - [has_member:, msekg:person_contributor_$(_fileID)_$(_idx)~iri]
+
+  person_contributor_has_role:
+    sources: contributors
+    s: msekg:person_contributor_$(_fileID)_$(_idx)
+    po:
+      - [has_role:, msekg:contributor_role_$(_fileID)_$(_idx)~iri]
+
+  # --- contributor_group ---
+  # 'identifier' and (denotes some ('research group role' and (role of some (organization and (has member some (person and (has role some 'contributor role')))))))
+  identifier_contributor_group:
+    sources: contributors
+    s: msekg:identifier_contributor_group_$(_fileID)_$(_idx)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:research_group_role_contributor_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(group)]
+
+  research_group_role_contributor:
+    sources: contributors
+    s: msekg:research_group_role_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, research_group_role:]
+      - [role_of:, msekg:organization_group_contributor_$(_fileID)_$(_idx)~iri]
+
+  organization_group_contributor:
+    sources: contributors
+    s: msekg:organization_group_contributor_$(_fileID)_$(_idx)
+    po:
+      - [a, organization:]
+      - [has_member:, msekg:person_contributor_$(_fileID)_$(_idx)~iri]
+
+  # --- date ---
+  # 'date process started' and (denotes some ('one-dimensional temporal region' and (inverse occupies_temporal_region some ('dataset creation process' and (preceded_by some 'simulation process')))))
+  date_process_started:
+    sources: root
+    s: msekg:date_process_started_$(_fileID)
+    po:
+      - [a, date_process_started:]
+      - [denotes:, msekg:temporal_region_$(_fileID)~iri]
+      - [has_value:, $(date)]
+
+  temporal_region:
+    sources: root
+    s: msekg:temporal_region_$(_fileID)
+    po:
+      - [a, one_dimensional_temporal_region:]
+
+  data_creation_process:
+    sources: root
+    s: msekg:data_creation_process_$(_fileID)
+    po:
+      - [a, data_creation_process:]
+      - [occupies_temporal_region:, msekg:temporal_region_$(_fileID)~iri]
+      - [preceded_by:, msekg:simulation_process_$(_fileID)~iri]
+
+  # --- shared_with ---
+  # 'information access specification' and (denotes some 'simulation dataset')
+  information_access_specification:
+    sources: shared_with
+    s: msekg:information_access_specification_$(_fileID)_$(_idx)
+    po:
+      - [a, information_access_specification:]
+      - [denotes:, msekg:$(_fileID)~iri]
+      - [has_value:, $(access_type)]
+
+  # --- description ---
+  # 'textual description' and (denotes some 'simulation dataset')
+  textual_description_dataset:
+    sources: root
+    s: msekg:textual_description_dataset_$(_fileID)
+    po:
+      - [a, textual_description:]
+      - [denotes:, msekg:$(_fileID)~iri]
+      - [has_value:, $(description)]
+
+  # --- rights ---
+  # 'licence' and (denotes some 'simulation dataset')
+  licence:
+    sources: root
+    s: msekg:licence_$(_fileID)
+    po:
+      - [a, licence:]
+      - [denotes:, msekg:$(_fileID)~iri]
+      - [has_value:, $(rights)]
+
+  # --- rights_holder ---
+  # 'identifier' and (denotes some ('license holder role' and (role of some (organization and (participates_in some ('licensing process' and (precedes some 'simulation process')))))))
+  identifier_rights_holder:
+    sources: rights_holder
+    s: msekg:identifier_rights_holder_$(_fileID)_$(_idx)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:licencing_holder_role_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(value)]
+
+  licencing_holder_role:
+    sources: rights_holder
+    s: msekg:licencing_holder_role_$(_fileID)_$(_idx)
+    po:
+      - [a, licencing_holder_role:]
+      - [role_of:, msekg:organization_rights_holder_$(_fileID)_$(_idx)~iri]
+
+  organization_rights_holder:
+    sources: rights_holder
+    s: msekg:organization_rights_holder_$(_fileID)_$(_idx)
+    po:
+      - [a, organization:]
+      - [participates_in:, msekg:licensing_process_$(_fileID)_$(_idx)~iri]
+
+  licensing_process:
+    sources: rights_holder
+    s: msekg:licensing_process_$(_fileID)_$(_idx)
+    po:
+      - [a, licensing_process:]
+      - [precedes:, msekg:simulation_process_$(_fileID)~iri]
+
+  # --- funder_name ---
+  # 'identifier' and (denotes some ('funding organization role' and (role of some (organization and (participates_in some ('funding process' and (precedes some 'simulation process')))))))
+  identifier_funder:
+    sources: root
+    s: msekg:identifier_funder_$(_fileID)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:funding_organization_role_$(_fileID)~iri]
+      - [has_value:, $(funder_name)]
+
+  funding_organization_role:
+    sources: root
+    s: msekg:funding_organization_role_$(_fileID)
+    po:
+      - [a, funding_organization_role:]
+      - [role_of:, msekg:organization_funder_$(_fileID)~iri]
+
+  organization_funder:
+    sources: root
+    s: msekg:organization_funder_$(_fileID)
+    po:
+      - [a, organization:]
+      - [participates_in:, msekg:funding_process_$(_fileID)~iri]
+
+  funding_process:
+    sources: root
+    s: msekg:funding_process_$(_fileID)
+    po:
+      - [a, funding_process:]
+      - [precedes:, msekg:simulation_process_$(_fileID)~iri]
+
+  # --- fund_identifier ---
+  # 'funding identifier' and (denotes some ('funding process' and (precedes some 'simulation process')))
+  funding_identifier:
+    sources: root
+    s: msekg:funding_identifier_$(_fileID)
+    po:
+      - [a, funding_identifier:]
+      - [denotes:, msekg:funding_process_$(_fileID)~iri]
+      - [has_value:, $(fund_identifier)]
+
+  # --- publisher ---
+  # 'identifier' and (denotes some ('publisher role' and (role of some (organization and (participates_in some ('publishing process' and (precedes some 'simulation process')))))))
+  identifier_publisher:
+    sources: root
+    s: msekg:identifier_publisher_$(_fileID)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:publisher_role_$(_fileID)~iri]
+      - [has_value:, $(publisher)]
+
+  publisher_role:
+    sources: root
+    s: msekg:publisher_role_$(_fileID)
+    po:
+      - [a, publisher_role:]
+      - [role_of:, msekg:organization_publisher_$(_fileID)~iri]
+
+  organization_publisher:
+    sources: root
+    s: msekg:organization_publisher_$(_fileID)
+    po:
+      - [a, organization:]
+      - [participates_in:, msekg:publishing_process_$(_fileID)~iri]
+
+  publishing_process:
+    sources: root
+    s: msekg:publishing_process_$(_fileID)
+    po:
+      - [a, publishing_process:]
+      - [precedes:, msekg:simulation_process_$(_fileID)~iri]
+
+  # --- relation ---
+  # 'identifier' and (denotes some ('information content entity' and (is about some 'simulation dataset')))
+  identifier_relation:
+    sources: relation
+    s: msekg:identifier_relation_$(_fileID)_$(_idx)
+    po:
+      - [a, identifier:]
+      - [denotes:, msekg:information_content_entity_$(_fileID)_$(_idx)~iri]
+      - [has_value:, $(value)]
+
+  information_content_entity:
+    sources: relation
+    s: msekg:information_content_entity_$(_fileID)_$(_idx)
+    po:
+      - [a, information_content_entity:]
+      - [is_about:, msekg:$(_fileID)~iri]
+
+  # --- keywords ---
+  # 'keyword textual entity' and (denotes some 'simulation dataset')
+  keyword_textual_entity:
+    sources: keywords
+    s: msekg:keyword_textual_entity_$(_fileID)_$(_idx)
+    po:
+      - [a, keyword_textual_entity:]
+      - [denotes:, msekg:$(_fileID)~iri]
+      - [has_value:, $(value)]

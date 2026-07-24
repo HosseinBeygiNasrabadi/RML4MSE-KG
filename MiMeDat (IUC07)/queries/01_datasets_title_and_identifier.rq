@@ -1,0 +1,17 @@
+# CQ: List all simulation datasets together with their title and identifier.
+PREFIX nfdi: <https://nfdi.fiz-karlsruhe.de/ontology/>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+
+SELECT ?dataset ?title ?identifier
+WHERE {
+  ?dataset a nfdi:NFDI_0001205 .                 # simulation dataset
+
+  ?titleEntity a nfdi:NFDI_0001019 ;             # title
+               obo:IAO_0000219 ?dataset ;         # denotes
+               nfdi:NFDI_0001007 ?title .         # has_value
+
+  ?identifierEntity a obo:IAO_0020000 ;          # identifier
+                     obo:IAO_0000219 ?dataset ;   # denotes
+                     nfdi:NFDI_0001007 ?identifier . # has_value
+}
+ORDER BY ?dataset

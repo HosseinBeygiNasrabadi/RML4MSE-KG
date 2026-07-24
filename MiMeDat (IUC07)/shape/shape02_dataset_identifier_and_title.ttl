@@ -1,0 +1,51 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix msekg: <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/> .
+@prefix nfdi:  <https://nfdi.fiz-karlsruhe.de/ontology/> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+
+# Shape 2: Every simulation dataset must have exactly one identifier and exactly one title, each carrying a non-empty has_value.
+
+msekg:Shape02_DatasetIdentifierAndTitle
+    a sh:NodeShape ;
+    sh:targetClass nfdi:NFDI_0001205 ;                       # simulation dataset
+    sh:property [
+        sh:path                 [ sh:inversePath obo:IAO_0000219 ] ; # <- denotes
+        sh:qualifiedValueShape  msekg:Shape02a_IdentifierHasValue ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedMaxCount    1 ;
+        sh:message      "Every simulation dataset must have exactly one identifier denoting it, with a non-empty has_value." ;
+    ] ;
+    sh:property [
+        sh:path                 [ sh:inversePath obo:IAO_0000219 ] ; # <- denotes
+        sh:qualifiedValueShape  msekg:Shape02b_TitleHasValue ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedMaxCount    1 ;
+        sh:message      "Every simulation dataset must have exactly one title denoting it, with a non-empty has_value." ;
+    ] .
+
+msekg:Shape02a_IdentifierHasValue
+    a sh:NodeShape ;
+    sh:class       obo:IAO_0020000 ;                         # identifier
+    sh:property [
+        sh:path        nfdi:NFDI_0001007 ;                   # has_value
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:datatype    xsd:string ;
+        sh:minLength   1 ;
+        sh:pattern     "\\S" ;                               # not just whitespace
+        sh:message     "The identifier must carry a non-empty has_value." ;
+    ] .
+
+msekg:Shape02b_TitleHasValue
+    a sh:NodeShape ;
+    sh:class       nfdi:NFDI_0001019 ;                       # title
+    sh:property [
+        sh:path        nfdi:NFDI_0001007 ;                   # has_value
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:datatype    xsd:string ;
+        sh:minLength   1 ;
+        sh:pattern     "\\S" ;                               # not just whitespace
+        sh:message     "The title must carry a non-empty has_value." ;
+    ] .

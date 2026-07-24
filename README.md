@@ -45,9 +45,31 @@ The pipeline is planned to map **[BAM Reference Data: Creep of Single-Crystal Ni
 7. Retrieve test duration, soak time, and heating time together for each creep testing process.
 8. List all creep testing machines and extensometers together with the datasets that used them.
 
-### MiMeDat (IUC07)
+### [MiMeDat (IUC07)](./MiMeDat%20(IUC07))
 
-*Coming soon.*
+The pipeline maps **[MiMeDat: Metadata Datasets for Microstructure-Sensitive Mechanical Data](https://github.com/Ronakshoghi/MiMeDat)** into MSE-KG. The RDF-converted sources semantically describe simulation datasets and their provenance (e.g., dataset identifier, title, and creators), RVE size, discretization, mechanical parameters, phase (constitutive model, orientation), stress, total_strain, plastic_strain, etc.
+
+*Currently mapped: dataset/provenance metadata. Simulation parameters (RVE geometry, mechanical boundary conditions, constitutive model, crystallographic orientation, stress–strain results) are planned next, pending their ontology mapping.*
+
+**Links:**
+- [Source repository & JSON schema (GitHub)](https://github.com/Ronakshoghi/MiMeDat)
+- [Reused MatWerk Ontology (MWO)](https://github.com/ISE-FIZKarlsruhe/mwo)
+- RDF in MaterialDigital Data Portal, **[Microstructure-Sensitive Mechanical Data Knowledge Graph (MiMeDat-KG, NFDI MatWerk IUC02)](https://dataportal.material-digital.de/dataset/knowledge-graph-for-creep-reference-datasets-nfdi-matwerk-iuc02)**: 
+- [SPARQL endpoint](https://dataportal.material-digital.de/dataset/knowledge-graph-for-creep-reference-datasets-nfdi-matwerk-iuc02/fuseki)
+- [Guided query UI (Sparklis)](https://dataportal.material-digital.de/sparklis/?title=knowledge-graph-for-creep-reference-datasets-nfdi-matwerk-iuc02&endpoint=https%3A//dataportal.material-digital.de/dataset/bb5b86d3-ade4-4b63-9e84-783de85a4abd/fuseki/%24/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label)
+
+**Running it yourself:** If you have a new dataset;
+
+1. Clone the repository,
+2. Put your dataset in the `JSON datasets/` folder,
+3. Run `bash MiMeDat_map.sh`,
+4. Copy the updated `MiMeDat_rdf.ttl` and push it to Zenodo / the PMD data portal.
+
+**Example SPARQL queries** (see [`queries/`](./MiMeDat%20(IUC07)/queries)):
+
+1. List all simulation datasets together with their title and identifier.
+2. Retrieve the full creator and contributor list (name, ORCID, affiliation, institute, research group) for a given dataset.
+3. Retrieve the funding organization, publisher, licence, and rights holder for a given dataset.
 
 
 ## How to cite

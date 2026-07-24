@@ -1,0 +1,127 @@
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/data_creation_process_a46fde6c> <http://purl.obolibrary.org/obo/BFO_0000062> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/simulation_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_institute_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0002351> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_group_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0002351> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_group_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0002351> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_institute_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0002351> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licencing_holder_role_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001065> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/textual_description_dataset_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001018> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/temporal_region_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/BFO_0000038> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/contributor_role_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000118> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licensing_process_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001066> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_funder_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_publisher_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_rights_holder_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_institute_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_institute_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_group_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_group_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/affiliation_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001102> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/affiliation_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001102> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/date_process_started_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0002471> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000629> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000629> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000629> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> <http://www.w3.org/2000/01/rdf-schema#label> "a46fde6c" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_content_entity_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/title_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001019> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_identifier_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001068> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_content_entity_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000136> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> <http://purl.obolibrary.org/obo/OBI_0000312> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/simulation_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/research_group_role_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001055> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/research_group_role_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001055> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001205> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/simulation_process_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pmd/co/PMD_0000933> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/orcid_identifier_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000708> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/orcid_identifier_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000708> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/publisher_role_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000193> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/data_creation_process_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010031> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_process_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001067> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000087> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/creator_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000087> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/contributor_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_process_a46fde6c> <http://purl.obolibrary.org/obo/BFO_0000063> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/simulation_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/publishing_process_a46fde6c> <http://purl.obolibrary.org/obo/BFO_0000063> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/simulation_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licensing_process_a46fde6c_0> <http://purl.obolibrary.org/obo/BFO_0000063> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/simulation_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/creator_role_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001026> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_access_specification_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_access_specification_a46fde6c_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001052> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_publisher_a46fde6c> <http://purl.obolibrary.org/obo/RO_0000056> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/publishing_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_funder_a46fde6c> <http://purl.obolibrary.org/obo/RO_0000056> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_rights_holder_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000056> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licensing_process_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/personal_name_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020015> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/personal_name_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020015> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/data_creation_process_a46fde6c> <http://purl.obolibrary.org/obo/BFO_0000199> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/temporal_region_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_creator_institute_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_funder_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_contributor_group_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_rights_holder_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_publisher_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_contributor_institute_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_relation_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_creator_group_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0020000> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/institute_role_creator_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001063> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/institute_role_contributor_a46fde6c_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purls.helmholtz-metadaten.de/mwo/MWO_0001063> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licence_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ebi.ac.uk/swo/SWO_0000002> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_organization_role_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000139> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/publishing_process_a46fde6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000444> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/publisher_role_a46fde6c> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_publisher_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/institute_role_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_institute_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_organization_role_a46fde6c> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_funder_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/contributor_role_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/research_group_role_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_group_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/creator_role_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/person_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/research_group_role_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_group_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licencing_holder_role_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_rights_holder_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/institute_role_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/organization_institute_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_rights_holder_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licencing_holder_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/personal_name_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/contributor_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/affiliation_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/creator_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_2> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/orcid_identifier_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/creator_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_publisher_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/publisher_role_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_creator_institute_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/institute_role_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/date_process_started_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/temporal_region_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/personal_name_creator_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/creator_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_identifier_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_process_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/textual_description_dataset_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_funder_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_organization_role_a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/orcid_identifier_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/contributor_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_relation_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_content_entity_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_creator_group_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/research_group_role_creator_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_access_specification_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licence_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_access_specification_a46fde6c_1> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/title_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_a46fde6c> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_contributor_group_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/research_group_role_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_contributor_institute_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/institute_role_contributor_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_1> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/a46fde6c> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/affiliation_contributor_a46fde6c_0> <http://purl.obolibrary.org/obo/IAO_0000219> <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/contributor_role_a46fde6c_0> .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_access_specification_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "c" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_relation_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "10.1088/2632-2153/ad379e" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_2> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Multi-axial loading" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/affiliation_creator_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Ruhr University Bochum" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/personal_name_creator_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Shoghi, Ronak" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_1> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Goss" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/personal_name_contributor_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Hartmaier, Alexander" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/licence_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Creative Commons Attribution 4.0 International" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_contributor_institute_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Interdisciplinary Centre for Advanced Materials Simulation (ICAMS)" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "a46fde6c" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_publisher_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Zenodo" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_creator_institute_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Interdisciplinary Centre for Advanced Materials Simulation (ICAMS)" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/title_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "tress-Strain Analysis of Polycrystalline Copper with Goss Texture Using Crystal Plasticity FEM" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/textual_description_dataset_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Stress-strain analysis of single-phase polycrystalline copper with a Goss texture using a cubic representative volume element (RVE) and periodic boundary conditions, performed with Abaqus through the crystal plasticity finite element method." .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/orcid_identifier_contributor_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "0000-0002-3710-1169" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_creator_group_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Micromechanical and Macroscopic Modelling" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/funding_identifier_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "190 389 738—TRR 103" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/orcid_identifier_creator_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "0000-0002-1451-2715" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_rights_holder_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Shoghi, Ronak" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/keyword_textual_entity_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "CPFEM" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/affiliation_contributor_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Ruhr University Bochum" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/date_process_started_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "2024-08-01" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_funder_a46fde6c> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "DFG" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/identifier_contributor_group_a46fde6c_0> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "Micromechanical and Macroscopic Modelling" .
+<https://nfdi.fiz-karlsruhe.de/matwerk/msekg/information_access_specification_a46fde6c_1> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> "all" .

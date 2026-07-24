@@ -1,0 +1,20 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix msekg: <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/> .
+@prefix nfdi:  <https://nfdi.fiz-karlsruhe.de/ontology/> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+
+# Shape 3: Each person must have exactly one role, which must be either a creator role or a contributor role.
+
+msekg:Shape03_PersonCreatorOrContributorRole
+    a sh:NodeShape ;
+    sh:targetClass nfdi:NFDI_0000004 ;                       # person
+    sh:property [
+        sh:path        obo:RO_0000087 ;                      # has_role
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:or (
+            [ sh:class nfdi:NFDI_0001026 ]                   # creator role
+            [ sh:class nfdi:NFDI_0000118 ]                   # contributor role
+        ) ;
+        sh:message     "Each person must have exactly one role, which must be either a creator role or a contributor role." ;
+    ] .

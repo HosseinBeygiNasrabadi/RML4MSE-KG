@@ -1,0 +1,18 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix msekg: <https://nfdi.fiz-karlsruhe.de/matwerk/msekg/> .
+@prefix nfdi:  <https://nfdi.fiz-karlsruhe.de/ontology/> .
+@prefix pmdco: <https://w3id.org/pmd/co/> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+
+# Shape 1: Every simulation dataset must be the specified output of exactly one simulation process.
+
+msekg:Shape01_DatasetOutputOfProcess
+    a sh:NodeShape ;
+    sh:targetClass nfdi:NFDI_0001205 ;                      # simulation dataset
+    sh:property [
+        sh:path        obo:OBI_0000312 ;                   # is_specified_output_of
+        sh:class       pmdco:PMD_0000933 ;                 # simulation process
+        sh:minCount    1 ;
+        sh:maxCount    1 ;
+        sh:message     "Every simulation dataset must be the specified output of exactly one simulation process." ;
+    ] .
